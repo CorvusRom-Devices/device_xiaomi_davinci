@@ -301,6 +301,10 @@ PRODUCT_PACKAGES += \
     librilutils \
     librmnetctl
 
+# Recorder
+PRODUCT_PACKAGES += \
+    OPScreenRecorder
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_xiaomi
