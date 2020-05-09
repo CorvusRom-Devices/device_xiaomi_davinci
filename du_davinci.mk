@@ -34,3 +34,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 #Corvus Stuff
 EXTRA_FOD_ANIMATIONS := true
+DU_BUILD_TYPE := OFFICIAL
