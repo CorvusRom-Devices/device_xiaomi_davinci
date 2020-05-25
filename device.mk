@@ -277,6 +277,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-du
 
+# PixelLiveWallpaper
+PRODUCT_PACKAGES += \
+    PixelLiveWallpaperPrebuilt
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service-qti
