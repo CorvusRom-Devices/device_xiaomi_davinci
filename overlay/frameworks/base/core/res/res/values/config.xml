@@ -634,6 +634,17 @@
     <integer-array name="config_keyboardTapVibePattern">
         <item>10</item>
     </integer-array>
+
+    <!-- Display mode remapping table -->
+    <string-array name="config_displayModeMappings" translatable="false">
+        <item>none:standard</item>
+        <item>hal_dci_p3:dci_p3</item>
+        <item>hal_srgb:srgb</item>
+    </string-array>
+
+    <!-- Filter unampped display modes -->
+    <bool name="config_filterDisplayModes">true</bool>
+    
     <!-- Whether device has a screen with a higher aspect ratio -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
 
