@@ -60,6 +60,7 @@ private:
 
     std::mutex mCallbackLock;
     sp<IFingerprintInscreenCallback> mCallback;
+
 };
 
 }  // namespace implementation
