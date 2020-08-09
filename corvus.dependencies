@@ -18,7 +18,7 @@
     "remote": "github"
   },
   {
-    "repository": "sarveshrulz/android_vendor_aeonax_ANXCamera",
+    "repository": "Hack64/android_vendor_aeonax_ANXCamera",
     "target_path": "vendor/aeonax/ANXCamera",
     "branch": "master",
     "remote": "github"
