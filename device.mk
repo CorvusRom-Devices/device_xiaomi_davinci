@@ -328,6 +328,9 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayEB
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
