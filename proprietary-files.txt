@@ -286,6 +286,8 @@ media/audio/ui/popup_muqin_down.ogg
 media/audio/ui/popup_muqin_up.ogg
 media/audio/ui/popup_yingyan_down.ogg
 media/audio/ui/popup_yingyan_up.ogg
+media/audio/ui/popup_super_mario_down.ogg
+media/audio/ui/popup_super_mario_up.ogg
 
 # Charger
 vendor/bin/hvdcp_opti
