@@ -29,6 +29,7 @@ import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.popupcamera.PopupCameraUtils;
 import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.display.KcalUtils;
+import org.lineageos.settings.vibrator.VibratorSettings;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
     private static final boolean DEBUG = false;
@@ -44,6 +45,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         DozeUtils.checkDozeService(context);
         PopupCameraUtils.startService(context);
+       VibratorSettings.restoreValue(context);
 
         if (KcalUtils.isKcalSupported())
             KcalUtils.writeCurrentSettings(sharedPrefs);
