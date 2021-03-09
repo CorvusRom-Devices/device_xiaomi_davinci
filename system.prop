@@ -52,3 +52,10 @@ ro.recovery.ui.margin_height=48
 
 # WiFi
 wifi.interface=wlan0
+
+# ADB
+persist.sys.usb.config=diag,adb
+sys.usb.config=diag,adb
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
