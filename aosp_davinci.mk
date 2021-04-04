@@ -22,7 +22,7 @@ $(call inherit-product-if-exists, vendor/miuicamera/common/common-vendor.mk)
 # Inherit from davinci device
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
-# Inherit some common Pixel Experience stuff.
+# Inherit some common Nezuko stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
@@ -30,6 +30,13 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_USES_BLUR := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_WIFI_EXT := true
+NEZUKO_MAINTAINER=MR.ROBOT.MK
+NEZUKO_BUILD_TYPE=OFFICIAL
+PRODUCT_PRODUCT_PROPERTIES += \
+ ro.nezuko.cpu=SD730
+
+NEZUKO_DONATE= https://www.buymeacoffee.com/MR.ROBOT.MK
+
 
 PRODUCT_NAME := aosp_davinci
 PRODUCT_DEVICE := davinci
