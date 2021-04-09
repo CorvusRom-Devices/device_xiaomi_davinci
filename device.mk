@@ -329,6 +329,7 @@ PRODUCT_PACKAGES += \
     product_charger_res_images
 
 PRODUCT_PACKAGES += \
+	FrameworkResOverlayEA \
     FrameworkResOverlayEB
 
 # Power
