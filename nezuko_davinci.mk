@@ -23,7 +23,7 @@ $(call inherit-product-if-exists, vendor/miuicamera/common/common-vendor.mk)
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
 # Inherit some common Nezuko stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/nezuko/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
@@ -38,7 +38,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 NEZUKO_DONATE= https://www.buymeacoffee.com/MR.ROBOT.MK
 
 
-PRODUCT_NAME := aosp_davinci
+PRODUCT_NAME := nezuko_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T
