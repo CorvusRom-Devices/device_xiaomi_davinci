@@ -22,23 +22,18 @@ $(call inherit-product-if-exists, vendor/miuicamera/common/common-vendor.mk)
 # Inherit from davinci device
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
-# Inherit some common Nezuko stuff.
-$(call inherit-product, vendor/nezuko/config/common_full_phone.mk)
+# Inherit some common Corvus stuff.
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_USES_BLUR := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_WIFI_EXT := true
-NEZUKO_MAINTAINER=MR.ROBOT.MK
-NEZUKO_BUILD_TYPE=OFFICIAL
 PRODUCT_PRODUCT_PROPERTIES += \
- ro.nezuko.cpu=SD730
+ ro.corvus.maintainer=MR.ROBOT.MK
 
-NEZUKO_DONATE= https://www.buymeacoffee.com/MR.ROBOT.MK
-
-
-PRODUCT_NAME := nezuko_davinci
+PRODUCT_NAME := corvus_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T

@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nezuko_davinci.mk
+    $(LOCAL_DIR)/corvus_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    nezuko_davinci-user \
-    nezuko_davinci-userdebug \
-    nezuko_davinci-eng
+    corvus_davinci-user \
+    corvus_davinci-userdebug \
+    corvus_davinci-eng

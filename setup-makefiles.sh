@@ -15,9 +15,9 @@ VENDOR=xiaomi
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-NEZUKO_ROOT="${MY_DIR}/../../.."
+CORVUS_ROOT="${MY_DIR}/../../.."
 
-HELPER="${NEZUKO_ROOT}/tools/extract-utils/extract_utils.sh"
+HELPER="${CORVUS_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -25,7 +25,7 @@ fi
 source "${HELPER}"
 
 # Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${NEZUKO_ROOT}"
+setup_vendor "${DEVICE}" "${VENDOR}" "${CORVUS_ROOT}"
 
 # Warning headers and guards
 write_headers
