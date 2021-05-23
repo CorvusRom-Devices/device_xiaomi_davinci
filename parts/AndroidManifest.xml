@@ -30,8 +30,6 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
-    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
-
     <uses-sdk
         android:minSdkVersion="24"
         android:targetSdkVersion="24"/>
@@ -47,10 +45,6 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".doze.DozeService"
-                 android:permission="XiaomiDozeService">
-        </service>
-
         <service android:name=".popupcamera.PopupCameraService"
                  android:permission="PopupCameraService">
         </service>
@@ -65,12 +59,6 @@
                     android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
         </service>
-
-        <activity
-            android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.Main">
-        </activity>
 
         <activity
             android:name=".popupcamera.PopupCameraSettingsActivity"
